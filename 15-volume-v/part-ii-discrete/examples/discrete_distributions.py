@@ -43,7 +43,7 @@ print("Skellam P(X=2):", skellam.pmf(2))
 def borel_pmf(k, lam=0.5):
     if k < 1:
         return 0.0
-    return np.exp(-lam * k) * (lam * k) ** (k - 1) / np.math.factorial(k)
+    return np.exp(-lam * k) * (lam * k) ** (k - 1) / __import__('math').factorial(k)
 
 print("Borel P(X=3):", borel_pmf(3))
 
@@ -52,7 +52,7 @@ print("Yule-Simon P(X=3):", stats.yulesimon.pmf(3, a=2))
 
 # Conway-Maxwell-Poisson: normalized finite approximation.
 def cmp_pmf(k, lam=3, nu=1.5, max_k=100):
-    weights = np.array([lam ** j / (np.math.factorial(j) ** nu) for j in range(max_k + 1)])
+    weights = np.array([lam ** j / (__import__('math').factorial(j) ** nu) for j in range(max_k + 1)])
     return weights[k] / weights.sum()
 
 print("COM-Poisson P(X=3):", cmp_pmf(3))
