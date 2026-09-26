@@ -1,7 +1,7 @@
 """Part VI: nonparametric model examples."""
 import numpy as np
 from scipy import stats
-from sklearn.neighbors import KernelDensity, KNeighborsClassifier, KernelRegression
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.isotonic import IsotonicRegression
