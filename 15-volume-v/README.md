@@ -1,40 +1,52 @@
 # Volume V — Probability, Statistics, Parametric & Nonparametric Models
 
-This chapter is a hands-on Python reference for probability distributions, statistical models, semiparametric methods, nonparametric methods, Bayesian nonparametrics, and common statistical tests.
+This volume extends the data-types curriculum into probability distributions, statistical models, semiparametric methods, nonparametric methods, Bayesian nonparametrics, and statistical tests.
 
-## Learning pattern
+## Eight-part structure
 
-Every topic should follow:
+| Part | Topics | Code |
+|---|---|---|
+| I | Continuous distributions 1–20 | `part-i-continuous/examples/continuous_distributions.py` |
+| II | Discrete distributions 21–35 | `part-ii-discrete/examples/discrete_distributions.py` |
+| III | Multivariate distributions 36–45 | `part-iii-multivariate/examples/multivariate_distributions.py` |
+| IV | Parametric models 46–65 | `part-iv-parametric/examples/parametric_models.py` |
+| V | Semiparametric models 66–75 | `part-v-semiparametric/examples/semiparametric_models.py` |
+| VI | Nonparametric models 76–90 | `part-vi-nonparametric/examples/nonparametric_models.py` |
+| VII | Bayesian nonparametric models 91–100 | `part-vii-bayesian-nonparametric/examples/bayesian_nonparametric.py` |
+| VIII | Nonparametric tests 101–110 | `part-viii-tests/examples/nonparametric_tests.py` |
 
-1. Definition
-2. Mathematical formulation
-3. Assumptions
-4. Parameters
-5. Probability function or model equation
-6. Statistical properties
-7. Estimation
-8. Interpretation
-9. Advantages and limitations
-10. Applications
-11. Python implementation
-12. Visualization
-13. Exercises
+## Code-sample standard
 
-## Parts
+Every numbered topic has a corresponding numbered code section. Examples demonstrate at least one of:
 
-- Part I — Continuous Probability Distributions
-- Part II — Discrete Probability Distributions
-- Part III — Multivariate Distributions
-- Part IV — Parametric Statistical Models
-- Part V — Semiparametric Models
-- Part VI — Nonparametric Statistical Models
-- Part VII — Bayesian Nonparametric Models
-- Part VIII — Common Nonparametric Statistical Tests
+- probability mass/density calculation
+- CDF or survival probability
+- random sampling
+- parameter estimation
+- model fitting
+- prediction
+- statistical testing
+- visualization
 
-## Code
+Some advanced methods use a small educational implementation rather than pretending a specialized library is required. Optional examples clearly identify external packages.
 
-Each part contains a runnable `examples/` directory. Examples use SciPy, NumPy, pandas, statsmodels, scikit-learn, and matplotlib where appropriate.
+## Learning progression
 
-The goal is not only to memorize formulas. Learners should connect:
+**Data → Variable Type → Measurement Scale → Probability Distribution → Statistical Assumptions → Model → Estimation → Prediction/Test → Evaluation**
 
-**Data Type → Distribution → Assumptions → Statistical Method → Model → Evaluation → Decision**
+## Run examples
+
+From the repository root:
+
+```bash
+python 15-volume-v/part-i-continuous/examples/continuous_distributions.py
+python 15-volume-v/part-ii-discrete/examples/discrete_distributions.py
+python 15-volume-v/part-iii-multivariate/examples/multivariate_distributions.py
+python 15-volume-v/part-iv-parametric/examples/parametric_models.py
+python 15-volume-v/part-v-semiparametric/examples/semiparametric_models.py
+python 15-volume-v/part-vi-nonparametric/examples/nonparametric_models.py
+python 15-volume-v/part-vii-bayesian-nonparametric/examples/bayesian_nonparametric.py
+python 15-volume-v/part-viii-tests/examples/nonparametric_tests.py
+```
+
+The repository is designed as a training resource, so each example should be expanded later with assumptions, mathematical derivations, interpretation, visualization, exercises, and real-world datasets.
